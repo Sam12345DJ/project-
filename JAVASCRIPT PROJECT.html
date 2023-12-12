@@ -21,20 +21,25 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
+<style>
+  .true {
+    margin-left: 630px;
+  }
+</style>
 
 <body>
   <div class="dropdown-center">
     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-        OTHER PROJECTS
+      OTHER PROJECTS
     </button>
     <ul class="dropdown-menu dropdown-menu-end">
-        <li><a class="dropdown-item" href="swift.html">swift</a></li>
-        <li><a class="dropdown-item" href="facebook.html">facebook</a></li>
-        <li><a class="dropdown-item" href="neco.html">neco</a></li>
-        <li><a class="dropdown-item" href="index.html">Whattsapp</li>
-          <li><a class="dropdown-item" href="metaopensource.html">META OPEN SOURCE</li>
+      <li><a class="dropdown-item" href="swift.html">swift</a></li>
+      <li><a class="dropdown-item" href="facebook.html">facebook</a></li>
+      <li><a class="dropdown-item" href="neco.html">neco</a></li>
+      <li><a class="dropdown-item" href="index.html">Whattsapp</li>
+      <li><a class="dropdown-item" href="metaopensource.html">META OPEN SOURCE</li>
     </ul>
-</div>
+  </div>
   <div class="song">
     <a href="#" style="color: grey;"><i class="fa fa-angle-up"></i></a>
   </div>
@@ -224,7 +229,7 @@
                   Start Guessing......
                 </h1> <br>
                 <input class="mynumber" placeholder="Guess a number btw 1 and 20"
-                  style="width: 60%;  font-size: 24px; text-align: center;border: 5px solid blue; margin-left: 20%;"><br><br><br>
+                  style="width: 40%;  font-size: 24px; text-align: center;border: 5px solid blue; margin-left: 30%;"><br><br><br>
 
                 <h2 class="number" style="text-align: center;">
                   The number is
@@ -361,7 +366,7 @@
                       </div>
                     </div>
                   </div>
-                  
+
                   <div class="nigeria">
                     <h1>Simple Add and Delete
                       Machine</h1>
@@ -870,7 +875,7 @@
                     availableSubject.push(subject);
                     updateAvailableSubjectTabl();
                   }
-                  
+
 
                   function updateAvailableSubjectTabl() {
                     let availableSubjectBody = document.getElementById("bodyy");
@@ -880,19 +885,19 @@
                       let subject = availableSubject[i];
                       let doc = document.createElement("tr");
 
-                      let qeenah = document.createElement("td");
+                      let nah = document.createElement("td");
                       qeenah.appendChild(document.createTextNode(subject));
 
-                      let jay = document.createElement("td");
+                      let ay = document.createElement("td");
                       let addButton = document.createElement("input");
                       addButton.type = 'checkbox';
                       addButton.onclick = function () {
                         addSubjectToSelecte(subject);
                       };
-                      jay.appendChild(addButton);
+                      ay.appendChild(addButton);
 
-                      doc.appendChild(qeenah);
-                      doc.appendChild(jay);
+                      doc.appendChild(nah);
+                      doc.appendChild(ay);
                       availableSubjectBody.appendChild(doc);
                     }
                   }
@@ -902,10 +907,10 @@
                     let doc = document.createElement("tr");
                     doc.id = subject;
 
-                    let jun = document.createElement("td");
-                    jun.appendChild(document.createTextNode(subject));
+                    let un = document.createElement("td");
+                    un.appendChild(document.createTextNode(subject));
 
-                    let kirah = document.createElement("td");
+                    let rah = document.createElement("td");
                     let delette = document.createElement("span");
                     let sist = document.createTextNode("\u00d7");
                     delette.appendChild(sist);
@@ -915,10 +920,10 @@
                     delette.onclick = function () {
                       removeSubjectFromSelecte(subject);
                     };
-                    kirah.appendChild(delette);
+                    rah.appendChild(delette);
 
-                    doc.appendChild(jun);
-                    doc.appendChild(kirah);
+                    doc.appendChild(un);
+                    doc.appendChild(rah);
                     selectedSubjectsTableBody.appendChild(doc);
                   }
                   updateAvailableSubjectTabl();
